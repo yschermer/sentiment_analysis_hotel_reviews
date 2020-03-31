@@ -1,0 +1,104 @@
+all from best estimator and best param
+- mean fit time for best estimator
+- accuracy
+- precision
+- recall
+- f1-score
+- confusion matrix
+
+TODO: write own labeled reviews
+
+MULTINOMIAL NAIVE BAYES PERFORMANCE EVALUATION
+-------------------
+Mean cross-validated score of best estimator: 0.9278912310359649.
+Parameter setting that gave the best results: {'tfidf__use_idf': True, 'vect__max_features': 10000, 'vect__ngram_range': (1, 2), 'vect__stop_words': None}.
+Mean fit time of best estimator: 66.71614193916321 seconds.
+Classification report:
+              precision    recall  f1-score   support
+
+          -1     0.9114    0.9278    0.9195     77314
+           1     0.9410    0.9274    0.9341     96008
+
+    accuracy                         0.9276    173322
+   macro avg     0.9262    0.9276    0.9268    173322
+weighted avg     0.9278    0.9276    0.9276    173322
+
+Confusion Matrix:
+[[71731  5583]
+ [ 6974 89034]]
+
+Saving classifier...
+Classifier successfully saved in: mnb.sav
+
+Performing grid search cross validation for Bernoulli Naive Bayes...
+Completed grid search cross validation for Bernoulli Naive Bayes.
+
+BERNOULLI NAIVE BAYES PERFORMANCE EVALUATION
+-------------------
+Mean cross-validated score of best estimator: 0.9096621019319588.
+Parameter setting that gave the best results: {'tfidf__use_idf': True, 'vect__max_features': 10000, 'vect__ngram_range': (1, 2), 'vect__stop_words': 'english'}.
+Mean fit time of best estimator: 51.426526117324826 seconds.
+Classification report:
+              precision    recall  f1-score   support
+
+          -1     0.8740    0.9292    0.9007     77314
+           1     0.9399    0.8921    0.9154     96008
+
+    accuracy                         0.9086    173322
+   macro avg     0.9070    0.9107    0.9081    173322
+weighted avg     0.9105    0.9086    0.9089    173322
+
+Confusion Matrix:
+[[71842  5472]
+ [10361 85647]]
+
+Saving classifier...
+Classifier successfully saved in: bnb.sav
+
+Performing grid search cross validation for Linear Support Vector Classifier...
+Completed grid search cross validation for Linear Support Vector Classifier.
+
+LINEAR SUPPORT VECTOR CLASSIFIER PERFORMANCE EVALUATION
+-------------------
+Mean cross-validated score of best estimator: 0.948658994989081.
+Parameter setting that gave the best results: {'clf__C': 1, 'tfidf__use_idf': False, 'vect__max_features': 10000, 'vect__ngram_range': (1, 2), 'vect__stop_words': None}.
+Mean fit time of best estimator: 49.30127668380737 seconds.
+Classification report:
+              precision    recall  f1-score   support
+
+          -1     0.9332    0.9521    0.9425     77481
+           1     0.9606    0.9449    0.9527     95841
+
+weighted avg     0.9484    0.9481    0.9482    173322
+
+Confusion Matrix:
+[[73767  3714]
+ [ 5279 90562]]
+
+Saving classifier...
+Classifier successfully saved in: lsvc.sav
+
+Performing grid search cross validation for Logistic Regression...
+Completed grid search cross validation for Logistic Regression.
+
+LOGISTIC REGRESSION PERFORMANCE EVALUATION
+-------------------
+Mean cross-validated score of best estimator: 0.94851331196649.
+Parameter setting that gave the best results: {'clf__max_iter': 10000, 'tfidf__use_idf': True, 'vect__max_features': 10000, 'vect__ngram_range': (1, 2), 'vect__stop_words': None}.
+Mean fit time of best estimator: 53.88970413208008 seconds.
+Classification report:
+              precision    recall  f1-score   support
+
+          -1     0.9331    0.9529    0.9429     77481
+           1     0.9613    0.9448    0.9530     95841
+
+    accuracy                         0.9484    173322
+   macro avg     0.9472    0.9488    0.9479    173322
+weighted avg     0.9487    0.9484    0.9485    173322
+
+Confusion Matrix:
+[[73832  3649]
+ [ 5292 90549]]
+
+Saving classifier...
+Classifier successfully saved in: lr.sav
