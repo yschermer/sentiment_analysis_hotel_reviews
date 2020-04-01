@@ -1,13 +1,3 @@
-all from best estimator and best param
-- mean fit time for best estimator
-- accuracy
-- precision
-- recall
-- f1-score
-- confusion matrix
-
-TODO: write own labeled reviews
-
 MULTINOMIAL NAIVE BAYES PERFORMANCE EVALUATION
 -------------------
 Mean cross-validated score of best estimator: 0.9278912310359649.
